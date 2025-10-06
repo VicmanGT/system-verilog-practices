@@ -18,6 +18,7 @@
       zero_flag = 1'b1;
       return 0;
     end
+    return {1'b0, x} - {1'b0, y};
   endfunction
 
   function automatic logic [8:0] mult(input logic [7:0] x, input logic [7:0] y);
